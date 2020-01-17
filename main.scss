@@ -1,0 +1,38 @@
+.information {
+    color: white;
+    background-color: $primary-color;
+    background-image: url("images/pozadi.jpg");
+    background-size: auto;
+    padding: 2rem;
+    position: relative;
+    right: 0rem;
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    h1 {
+        font-size: 5rem;
+        font-weight: normal;
+        margin-top: 0;
+        ;
+    }
+    p {
+        font-size: 2.2rem;
+        font-weight: lighter;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.content {
+    padding: 2rem;
+    text-align: center;
+    .container img {
+        width: 65px;
+    }
+    .h3 {
+        color: $primary-color;
+        padding: 0.5rem;
+    }
+}

@@ -1,0 +1,95 @@
+.header {
+  padding: 2rem;
+}
+
+.header .nav-pills .nav-link,
+.header .nav-pills .show > .nav-link {
+  color: #25133d;
+}
+
+.header .nav-pills .nav-link a:hover,
+.header .nav-pills .show > .nav-link a:hover {
+  color: red;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  text-transform: uppercase;
+}
+
+.information {
+  color: white;
+  background-color: #48418e;
+  background-image: url("images/pozadi.jpg");
+  background-size: auto;
+  padding: 2rem;
+  position: relative;
+  right: 0rem;
+}
+
+.information img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.information h1 {
+  font-size: 5rem;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.information p {
+  font-size: 2.2rem;
+  font-weight: lighter;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.content .container img {
+  width: 65px;
+}
+
+.content .h3 {
+  color: #48418e;
+  padding: 0.5rem;
+}
+
+.card {
+  background-color: #48418e;
+  color: white;
+}
+
+.card .card-body {
+  padding: 0.5rem;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.page {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  font: "Source Sans Pro", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

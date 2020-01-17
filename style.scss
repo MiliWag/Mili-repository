@@ -1,0 +1,25 @@
+@import "variables.scss";
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: $body-color;
+}
+
+.page {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font: $font-stack;
+}

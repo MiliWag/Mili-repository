@@ -1,0 +1,15 @@
+.header {
+    padding: 2rem;
+    .nav-pills .nav-link,
+    .nav-pills .show>.nav-link {
+        color: $secundary-color;
+        a:hover {
+            color: red;
+        }
+    }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    text-transform: uppercase;
+}
