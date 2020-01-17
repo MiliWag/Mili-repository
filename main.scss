@@ -2,7 +2,7 @@
     color: white;
     background-color: $primary-color;
     background-image: url("images/pozadi.jpg");
-    background-size: auto;
+    background-size: cover;
     padding: 2rem;
     position: relative;
     right: 0rem;
@@ -12,27 +12,57 @@
         right: 0;
     }
     h1 {
-        font-size: 5rem;
+        font-size: 500%;
         font-weight: normal;
-        margin-top: 0;
-        ;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     p {
-        font-size: 2.2rem;
+        font-size: 200%;
         font-weight: lighter;
         padding-top: 2rem;
         padding-bottom: 2rem;
+    }
+    .btn {
+        margin-right: 2rem;
+        margin-bottom: 1.5rem;
+        padding: 1rem 2rem 1rem 2rem;
+        border-color: white;
+        font-size: 1.2rem;
+    }
+    .btn-primary {
+        background-color: $primary-color;
+    }
+    .btn-outline-primary {
+        color: white;
+        .btn-outline-primary a:hover {
+            background-color: $primary-color;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .information img {
+        visibility: hidden;
     }
 }
 
 .content {
     padding: 2rem;
     text-align: center;
+    .col-sm {
+        .p {
+            padding: 1rem;
+        }
+    }
     .container img {
         width: 65px;
     }
-    .h3 {
+    .h3,
+    h3 {
         color: $primary-color;
-        padding: 0.5rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 1rem;
     }
 }

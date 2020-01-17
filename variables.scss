@@ -3,3 +3,4 @@ $primary-color: #48418e;
 $secundary-color:#25133d;
 $font-stack: 'Source Sans Pro',
 sans-serif;
+$breakpoints: ('md': (max-width: 1200px), 'sm': (max-width: 900px), 'xs': (max-width: 600px), )

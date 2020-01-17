@@ -1,27 +1,31 @@
-.header {
-  padding: 2rem;
+.nav {
+  padding: 0.5rem;
+  margin-right: 10rem;
 }
 
-.header .nav-pills .nav-link,
-.header .nav-pills .show > .nav-link {
+.nav a.nav-link {
   color: #25133d;
-}
-
-.header .nav-pills .nav-link a:hover,
-.header .nav-pills .show > .nav-link a:hover {
-  color: red;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   text-transform: uppercase;
+  font-weight: bold;
+  color: #25133d;
+  background-color: white;
+  padding-left: 0;
+}
+
+.toggler {
+  width: 40px;
+  visibility: hidden;
 }
 
 .information {
   color: white;
   background-color: #48418e;
   background-image: url("images/pozadi.jpg");
-  background-size: auto;
+  background-size: cover;
   padding: 2rem;
   position: relative;
   right: 0rem;
@@ -34,16 +38,43 @@
 }
 
 .information h1 {
-  font-size: 5rem;
+  font-size: 500%;
   font-weight: normal;
-  margin-top: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .information p {
-  font-size: 2.2rem;
+  font-size: 200%;
   font-weight: lighter;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.information .btn {
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem 1rem 2rem;
+  border-color: white;
+  font-size: 1.2rem;
+}
+
+.information .btn-primary {
+  background-color: #48418e;
+}
+
+.information .btn-outline-primary {
+  color: white;
+}
+
+.information .btn-outline-primary .btn-outline-primary a:hover {
+  background-color: #48418e;
+}
+
+@media (max-width: 900px) {
+  .information img {
+    visibility: hidden;
+  }
 }
 
 .content {
@@ -51,13 +82,20 @@
   text-align: center;
 }
 
+.content .col-sm .p {
+  padding: 1rem;
+}
+
 .content .container img {
   width: 65px;
 }
 
-.content .h3 {
+.content .h3,
+.content h3 {
   color: #48418e;
-  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 1rem;
 }
 
 .card {
