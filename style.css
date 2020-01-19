@@ -1,24 +1,74 @@
-.nav {
-  padding: 0.5rem;
-  margin-right: 10rem;
+.my-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.nav a.nav-link {
-  color: #25133d;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.first-link {
   text-transform: uppercase;
   font-weight: bold;
   color: #25133d;
   background-color: white;
-  padding-left: 0;
+  padding: 1rem;
+  margin-left: 1.5rem;
+}
+
+.first-link a:hover {
+  list-style-type: none;
+  color: red;
+}
+
+.menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0.5rem;
+}
+
+.menu a.nav-link {
+  color: #25133d;
 }
 
 .toggler {
   width: 40px;
   visibility: hidden;
+}
+
+@media (max-width: 700px) {
+  .toggler {
+    visibility: visible;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+    top: 3.5rem;
+    background-color: white;
+  }
+  .nav.nav-pills.nav-fill {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nav-link {
+    text-align: start;
+    border-top: solid 1px #e5e5e5;
+  }
+  .nav-show {
+    display: block;
+  }
 }
 
 .information {
